@@ -1,6 +1,6 @@
 # Chat API - Trabajo Final Node.js
 
-API REST desarrollada con Node.js, Express y MongoDB para gestión de usuarios, chats y mensajes.
+API REST desarrollada con Node.js, Express y MongoDB para gestión de usuarios, chats y mensajes. CON DEPLOY EN RENDER
 
 ## Tecnologías utilizadas
 
@@ -35,6 +35,8 @@ npm run dev
 - DELETE /messages/:id
 
 ## Ejemplo request
+
+![DEPLOY](./src/capturas/deployenrender.png)
 
 POST /users
 
