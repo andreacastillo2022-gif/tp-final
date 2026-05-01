@@ -2,7 +2,8 @@ import express from "express";
 
 import {
   getChats,
-  createChat
+  createChat,
+    deleteChat
 } from "../controllers/chat.controller.js";
 
 const router = express.Router();

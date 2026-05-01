@@ -6,7 +6,7 @@ export const getMessages = async (req, res) => {
   res.json({
     success: true,
     data: messages,
-    message: "Mensajes obtenidos."
+    message: "Mensajes obtenidos.",
   });
 };
 
@@ -15,8 +15,8 @@ export const createMessage = async (req, res) => {
 
   res.json({
     success: true,
-    data: message
-    message: "Mensaje creado."
+    data: message,
+    message: "Mensaje creado.",
   });
 };
 
@@ -27,6 +27,6 @@ export const deleteMessage = async (req, res) => {
   res.json({
     success: true,
     data: message,
-    message: "Mensaje eliminado"
+    message: "Mensaje eliminado",
   });
 };
