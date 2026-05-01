@@ -5,7 +5,8 @@ export const getMessages = async (req, res) => {
 
   res.json({
     success: true,
-    data: messages
+    data: messages,
+    message: "Mensajes obtenidos."
   });
 };
 
@@ -15,5 +16,17 @@ export const createMessage = async (req, res) => {
   res.json({
     success: true,
     data: message
+    message: "Mensaje creado."
+  });
+};
+
+export const deleteMessage = async (req, res) => {
+
+  const message = await Message.findByIdAndDelete(req.params.id);
+
+  res.json({
+    success: true,
+    data: message,
+    message: "Mensaje eliminado"
   });
 };

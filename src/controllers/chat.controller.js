@@ -5,7 +5,8 @@ export const getChats = async (req, res) => {
 
   res.json({
     success: true,
-    data: chats
+    data: chats,
+    message: "Chats obtenidos.",
   });
 };
 
@@ -14,6 +15,18 @@ export const createChat = async (req, res) => {
 
   res.json({
     success: true,
-    data: chat
+    data: chat,
+    message: "Chat creado.",
+  });
+};
+
+export const deleteChat = async (req, res) => {
+
+  const chat = await Chat.findByIdAndDelete(req.params.id);
+
+  res.json({
+    success: true,
+    data: chat,
+    message: "Chat eliminado"
   });
 };

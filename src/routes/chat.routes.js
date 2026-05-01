@@ -11,4 +11,7 @@ router.get("/", getChats);
 
 router.post("/", createChat);
 
+
+router.delete("/:id", deleteChat);
+
 export default router;
