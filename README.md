@@ -45,9 +45,19 @@ POST /users
 }
 Andy fue eliminado y actualmente existe el siguiente usuario que
 se usó para unir todo, tanto como id de mensaje y usuario formando un chat
+```
+
+![POST](./src/capturas/post.png)
+![GET](./src/capturas/get.png)
+![DELETE](./src/capturas/delete.png)
+![CHAT POST](./src/capturas/chatpost.png)
+
+
+```json
 {
   "username": "Emiliano",
   "email": "emi@gmail.com"
 }
+```
 
-![CHAT](./capturas/mensaje.png)
+![CHAT](./src/capturas/mensaje.png)
